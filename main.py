@@ -1,9 +1,28 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 import os
+import logging
 
-app = FastAPI(title="Gwyneth Peña-Siguenza")
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+app = FastAPI(
+    title="Gwyneth Peña-Siguenza",
+    description="Personal website of Gwyneth Peña-Siguenza",
+    version="1.0.0"
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Serve static files (if any)
 if os.path.exists("static"):
@@ -128,20 +147,17 @@ async def home():
     </head>
     <body>
         <div class="nav">
-            <a href="https://linkedin.com/in/gwyneth-pena-siguenza" target="_blank">linkedin</a>
+            <a href="https://linkedin.com/in/madebygps" target="_blank">linkedin</a>
             <a href="https://github.com/madebygps" target="_blank">github</a>
             <a href="https://twitter.com/madebygps" target="_blank">x</a>
-            <a href="https://youtube.com/@madebygps" target="_blank">youtube</a>
+            <a href="https://youtube.com/@gpslearnsai" target="_blank">youtube</a>
         </div>
         
         <div class="container">
             <h1>hi i'm gps.</h1>
-            
-            <p class="subtitle">i'm just a gal that loves creating things for others.</p>
-            
             <div class="content">
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; font-weight: 600;">work</h2>
-                <p>i work at microsoft as a <span class="highlight">sr. cloud advocate</span> helping others build and deploy python workloads on azure.</p>
+                <p>I work at microsoft as a <span class="highlight">sr. cloud advocate</span> helping others build and deploy python workloads on azure.</p>
                 
                 <p>primarily focused on python + azure functions, azure app service and some iaas stuff. currently obsessing over how to <a href="https://aka.ms/madebygps" target="_blank">leverage agentic coding</a> to accomplish more.</p>
                 
@@ -161,9 +177,25 @@ async def home():
 
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy"}
+    """Health check endpoint for monitoring"""
+    return {
+        "status": "healthy",
+        "service": "simple-gps",
+        "version": "1.0.0"
+    }
+
+@app.get("/")
+async def root():
+    """Redirect to home page"""
+    return {"message": "Welcome to Gwyneth's website", "docs": "/docs"}
 
 if __name__ == "__main__":
     import uvicorn
     port = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    logger.info(f"Starting server on port {port}")
+    uvicorn.run(
+        app, 
+        host="0.0.0.0", 
+        port=port,
+        log_level="info"
+    )
