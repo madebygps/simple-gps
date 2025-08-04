@@ -81,7 +81,7 @@ async def home():
             h1 {
                 font-size: 48px;
                 font-weight: 700;
-                color: #333333;
+                color: #999999;
                 margin-bottom: 30px;
                 line-height: 1.1;
             }
@@ -154,19 +154,19 @@ async def home():
         </div>
         
         <div class="container">
-            <h1>hi i'm gps.</h1>
+            <h1>Gwen Peña-Siguenza.</h1>
             <div class="content">
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; font-weight: 600;">work</h2>
-                <p>I work at Microsoft as a <span class="highlight">sr. cloud advocate</span> helping others build and deploy Python workloads on Azure.</p>
+                <p>Helping you build and deploy Python workloads on Azure as a Cloud advocate.</p>
                 
-                <p>Primarily focused on improving devex for python + azure functions, azure app service and some iaas stuff.</p>
+                <p>Primarily focused on improving the developer experience  for Python + Azure App Service, Azure Functions and on how to leverage agentic programming to achieve more.</p>
                 
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">after hours</h2>
-                <p>I am the main contributor and maintainer of <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
+                <p>Main contributor and maintainer of <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
                 
                 
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">goals</h2>
-                <p>keep making things that help people. experiment with new tech. definitely continue being curious about everything.</p>
+                <p>keep making things that help people. consume less. </p>
             </div>
         </div>
     </body>
