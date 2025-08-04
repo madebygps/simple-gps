@@ -157,9 +157,9 @@ async def home():
             <h1>Gwen Peña-Siguenza.</h1>
             <div class="content">
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; font-weight: 600;">work</h2>
-                <p>Helping you build and deploy Python workloads on Azure as a Cloud advocate.</p>
+                <p>Helping customers build and deploy Python workloads on Azure as a Cloud advocate.</p>
                 
-                <p>Primarily focused on improving the developer experience  for Python + Azure App Service, Azure Functions and on how to leverage agentic programming to achieve more.</p>
+                <p>Primarily focused on improving the developer experience for Python + Azure App Service, Azure Functions and on how to leverage agentic programming to achieve more.</p>
                 
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">after hours</h2>
                 <p>Main contributor and maintainer of <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
