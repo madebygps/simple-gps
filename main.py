@@ -157,17 +157,16 @@ async def home():
             <h1>hi i'm gps.</h1>
             <div class="content">
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; font-weight: 600;">work</h2>
-                <p>I work at microsoft as a <span class="highlight">sr. cloud advocate</span> helping others build and deploy python workloads on azure.</p>
+                <p>I work at Microsoft as a <span class="highlight">sr. cloud advocate</span> helping others build and deploy Python workloads on Azure.</p>
                 
-                <p>primarily focused on python + azure functions, azure app service and some iaas stuff. currently obsessing over how to <a href="https://aka.ms/madebygps" target="_blank">leverage agentic coding</a> to accomplish more.</p>
+                <p>Primarily focused on improving devex for python + azure functions, azure app service and some iaas stuff.</p>
                 
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">after hours</h2>
-                <p>most recently, i developed <a href="#" target="_blank">learntocloud</a> — the largest free cloud learning resource in the world. we scaled to over 100,000 learners, created learning paths, grew content to millions of views, and built resources to help people find their tribe.</p>
+                <p>I am the main contributor and maintainer of <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
                 
-                <p>worked on it for three years before closing it down to focus more on my microsoft work and spending time with family, cats, and books.</p>
                 
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">goals</h2>
-                <p>keep making things that help people. experiment with new tech. maybe write a book someday. definitely continue being curious about everything.</p>
+                <p>keep making things that help people. experiment with new tech. definitely continue being curious about everything.</p>
             </div>
         </div>
     </body>
