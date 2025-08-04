@@ -157,7 +157,7 @@ async def home():
             <h1>Gwen Peña-Siguenza.</h1>
             <div class="content">
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; font-weight: 600;">work</h2>
-                <p>Helping customers build and deploy Python workloads on Azure as a Cloud advocate.</p>
+                <p>I work at Microsoft as a Cloud Advocate where I on help customers build and deploy Python workloads on Azure.</p>
                 
                 <p>Primarily focused on improving the developer experience for Python + Azure App Service, Azure Functions and on how to leverage agentic programming to achieve more.</p>
                 
