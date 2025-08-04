@@ -1,0 +1,8 @@
+name: simple-gps
+infra:
+  provider: bicep
+services:
+  simple-gps:
+    project: ./
+    host: appservice
+    language: python
