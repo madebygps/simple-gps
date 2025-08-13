@@ -10,8 +10,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(
-    title="Gwyneth Peña-Siguenza",
-    description="Personal website of Gwyneth Peña-Siguenza",
+    title="Gwen Peña-Siguenza",
+    description="Personal website of Gwen Peña-Siguenza",
     version="1.0.0"
 )
 
@@ -36,7 +36,7 @@ async def home():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gwyneth Peña-Siguenza</title>
+        <title>Gwen Peña-Siguenza</title>
         <style>
             * {
                 margin: 0;
@@ -157,16 +157,21 @@ async def home():
             <h1>Gwen Peña-Siguenza.</h1>
             <div class="content">
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; font-weight: 600;">work</h2>
-                <p>I work at Microsoft as a Cloud Advocate where I on help customers build and deploy Python workloads on Azure.</p>
-                
-                <p>Primarily focused on improving the developer experience for Python + Azure App Service, Azure Functions and on how to leverage agentic programming to achieve more.</p>
-                
+                <p>I work at Microsoft as a Cloud Advocate helping customers build and deploy Python workloads on Azure.</p>
+
+                <p>Primarily focused on improving the developer experience for Python + Azure App Service, Azure Functions, GitHub Copilot, and Cosmos DB.</p>
+
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">after hours</h2>
                 <p>Main contributor and maintainer of <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
                 
                 
-                <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">goals</h2>
-                <p>keep making things that help people. consume less. </p>
+                <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">some of my favorite recent work</h2>
+                <ul>
+                    <li><a href="http://aka.ms/pythonia/grabaciones" target="_blank">Python + IA </a> Serie introductoria de 6 partes sobre IA con Python </li>
+                    <li><a href="https://x.com/madebygps/status/1950352345327345837" target="_blank">Python Learning Space</a> How to configure GitHub Copilot to learn tech concepts deeply through hands-on exercises.</li>
+                    <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">A brutal guide to removing digital distractions</a> I am a big fan of leveraging tech to enhance focus and productivity.</li>
+                    <li><a href="https://github.com/madebygps/azd-simple-fastapi-container-appservice" target="_blank">Containerized FastAPI on App Service</a> Deploy a FastAPI app in a container on Azure App Service quick!</li>
+                </ul>
             </div>
         </div>
     </body>
