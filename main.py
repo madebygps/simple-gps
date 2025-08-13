@@ -156,13 +156,11 @@ async def home():
         <div class="container">
             <h1>Gwen Peña-Siguenza.</h1>
             <div class="content">
-                <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; font-weight: 600;">work</h2>
                 <p>I work at Microsoft as a Cloud Advocate helping customers build and deploy Python workloads on Azure.</p>
 
                 <p>Primarily focused on improving the developer experience for Python + Azure App Service, Azure Functions, GitHub Copilot, and Cosmos DB.</p>
 
-                <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">after hours</h2>
-                <p>Main contributor and maintainer of <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
+                <p>I maintain <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
                 
                 
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">some of my favorite recent work</h2>
