@@ -43,15 +43,13 @@ async def home():
                 padding: 0;
                 box-sizing: border-box;
             }
-            
             body {
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-                background-color: #000;
-                color: #999999;
+                background-color: #fff;
+                color: #222;
                 line-height: 1.6;
                 min-height: 100vh;
             }
-            
             .nav {
                 text-align: left;
                 padding: 40px 0 60px 0;
@@ -60,85 +58,72 @@ async def home():
                 padding-left: 20px;
                 padding-right: 20px;
             }
-            
             .nav a {
                 color: #007AFF;
                 text-decoration: underline;
                 margin-right: 30px;
                 font-size: 16px;
             }
-            
             .nav a:hover {
                 opacity: 0.7;
             }
-            
             .container {
                 max-width: 600px;
                 margin: 0 auto;
                 padding: 0 20px;
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: none;
             }
-            
             h1 {
                 font-size: 48px;
                 font-weight: 700;
-                color: #999999;
+                color: #222;
                 margin-bottom: 30px;
                 line-height: 1.1;
             }
-            
             .subtitle {
                 font-size: 20px;
-                color: #999999;
+                color: #444;
                 margin-bottom: 40px;
                 line-height: 1.4;
             }
-            
             .content {
                 font-size: 16px;
                 margin-bottom: 30px;
                 line-height: 1.7;
             }
-            
             .content p {
                 margin-bottom: 30px;
             }
-            
             a {
                 color: #007AFF;
                 text-decoration: none;
             }
-            
             a:hover {
                 text-decoration: underline;
             }
-            
             .highlight {
                 color: #007AFF;
             }
-            
             @media (max-width: 768px) {
                 .nav {
                     padding-left: 15px;
                     padding-right: 15px;
                 }
-                
                 .nav a {
                     margin-right: 20px;
                     font-size: 14px;
                 }
-                
                 .container {
                     padding: 0 15px;
                 }
-                
                 h1 {
                     font-size: 36px;
                 }
-                
                 .subtitle {
                     font-size: 18px;
                 }
-                
                 .content {
                     font-size: 15px;
                 }
@@ -156,7 +141,7 @@ async def home():
         <div class="container">
             <h1>Gwen Peña-Siguenza.</h1>
             <div class="content">
-                <p>I work at Microsoft as a Cloud Advocate helping customers build and deploy Python workloads on Azure.</p>
+                <p>I like building things and teaching. I work at Microsoft as a Cloud Advocate helping customers build and deploy Python workloads on Azure.</p>
 
                 <p>Primarily focused on improving the developer experience for Python + Azure App Service, Azure Functions, GitHub Copilot, and Cosmos DB.</p>
 
