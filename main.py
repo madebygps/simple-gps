@@ -31,118 +31,96 @@ if os.path.exists("static"):
 @app.get("/", response_class=HTMLResponse)
 async def home():
     html_content = """
-    <!DOCTYPE html>
-    <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gwen Peña-Siguenza</title>
         <style>
-            * {
+            body {
+                background: #f6f7fa;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                color: #222;
                 margin: 0;
                 padding: 0;
-                box-sizing: border-box;
+                font-size: 18px;
             }
-            body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-                background-color: #fff;
-                color: #222;
-                line-height: 1.6;
-                min-height: 100vh;
+            .container {
+                max-width: 700px;
+                margin: 40px auto;
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+                padding: 40px 32px;
             }
             .nav {
                 text-align: left;
-                padding: 40px 0 60px 0;
-                max-width: 600px;
-                margin: 0 auto;
-                padding-left: 20px;
-                padding-right: 20px;
+                margin-bottom: 32px;
             }
             .nav a {
-                color: #007AFF;
+                color: #2970ff;
                 text-decoration: underline;
-                margin-right: 30px;
+                margin-right: 24px;
                 font-size: 16px;
             }
-            .nav a:hover {
-                opacity: 0.7;
-            }
-            .container {
-                max-width: 600px;
-                margin: 0 auto;
-                padding: 0 20px;
-                background: #fff;
-                border-radius: 12px;
-                box-shadow: none;
+            .nav a:last-child {
+                margin-right: 0;
             }
             h1 {
-                font-size: 48px;
+                font-size: 2.6em;
                 font-weight: 700;
+                margin-bottom: 24px;
                 color: #222;
-                margin-bottom: 30px;
-                line-height: 1.1;
             }
-            .subtitle {
-                font-size: 20px;
+            h2 {
+                font-size: 1.2em;
+                margin-top: 32px;
+                margin-bottom: 16px;
+                color: #2970ff;
+                font-weight: 600;
+            }
+            p, ul {
                 color: #444;
-                margin-bottom: 40px;
-                line-height: 1.4;
-            }
-            .content {
-                font-size: 16px;
-                margin-bottom: 30px;
+                font-size: 1em;
                 line-height: 1.7;
             }
-            .content p {
-                margin-bottom: 30px;
+            ul {
+                padding-left: 20px;
+                margin-bottom: 24px;
+            }
+            li {
+                margin-bottom: 10px;
             }
             a {
-                color: #007AFF;
-                text-decoration: none;
+                color: #2970ff;
             }
-            a:hover {
-                text-decoration: underline;
-            }
-            .highlight {
-                color: #007AFF;
-            }
-            @media (max-width: 768px) {
-                .nav {
-                    padding-left: 15px;
-                    padding-right: 15px;
-                }
-                .nav a {
-                    margin-right: 20px;
-                    font-size: 14px;
-                }
+            @media (max-width: 700px) {
                 .container {
-                    padding: 0 15px;
+                    max-width: 100%;
+                    margin: 0;
+                    border-radius: 0;
+                    box-shadow: none;
+                    padding: 24px 8px;
                 }
                 h1 {
-                    font-size: 36px;
+                    font-size: 2em;
                 }
-                .subtitle {
-                    font-size: 18px;
-                }
-                .content {
+                .nav a {
                     font-size: 15px;
+                    margin-right: 16px;
                 }
             }
         </style>
     </head>
     <body>
-        <div class="nav">
-            <a href="https://linkedin.com/in/madebygps" target="_blank">linkedin</a>
-            <a href="https://github.com/madebygps" target="_blank">github</a>
-            <a href="https://twitter.com/madebygps" target="_blank">x</a>
-            <a href="https://youtube.com/@gpslearnsai" target="_blank">youtube</a>
-        </div>
-        
         <div class="container">
+            <div class="nav">
+                <a href="https://linkedin.com/in/madebygps" target="_blank">linkedin</a>
+                <a href="https://github.com/madebygps" target="_blank">github</a>
+                <a href="https://twitter.com/madebygps" target="_blank">x</a>
+                <a href="https://youtube.com/@gpslearnsai" target="_blank">youtube</a>
+            </div>
             <h1>Gwen Peña-Siguenza.</h1>
             <div class="content">
                 <p>I like building things and teaching. I work at Microsoft as a Cloud Advocate helping customers build and deploy Python workloads on Azure.</p>
-
+                        
                 <p>Primarily focused on improving the developer experience for Python + Azure App Service, Azure Functions, GitHub Copilot, and Cosmos DB.</p>
 
                 <p>I maintain <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
@@ -156,6 +134,10 @@ async def home():
                     <li><a href="https://github.com/madebygps/azd-simple-fastapi-container-appservice" target="_blank">Containerized FastAPI on App Service</a> Deploy a FastAPI app in a container on Azure App Service quick!</li>
                 </ul>
             </div>
+            <footer style="text-align:center; margin-top:40px; color:#888; font-size:15px;">
+                built on azure app service —
+                <a href="https://github.com/madebygps/simple-gps" target="_blank" style="color:#2970ff;">github repo</a>
+            </footer>
         </div>
     </body>
     </html>
