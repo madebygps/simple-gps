@@ -132,6 +132,7 @@ async def home():
                     <li><a href="https://x.com/madebygps/status/1950352345327345837" target="_blank">Python Learning Space</a> How to configure GitHub Copilot to learn tech concepts deeply through hands-on exercises.</li>
                     <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">A brutal guide to removing digital distractions</a> I am a big fan of leveraging tech to enhance focus and productivity.</li>
                     <li><a href="https://github.com/madebygps/azd-simple-fastapi-container-appservice" target="_blank">Containerized FastAPI on App Service</a> Deploy a FastAPI app in a container on Azure App Service quick!</li>
+                    <li><a href="https://youtu.be/gIHt75GVWDo?feature=shared" target="_blank">MPC + Python</a> Crea tu Primer MCP Server con Python [Curso Completo Desde Cero] </li>
                 </ul>
             </div>
             <footer style="text-align:center; margin-top:40px; color:#888; font-size:15px;">
