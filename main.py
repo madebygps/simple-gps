@@ -126,10 +126,10 @@ async def home():
                 
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">some of my favorite recent work</h2>
                 <ul>
-                    <li><a href="http://aka.ms/pythonia/grabaciones" target="_blank">Python + IA</a> Serie introductoria de 6 partes sobre IA con Python </li>
-                    <li><a href="https://youtu.be/d_wpn8wW2sw?feature=shared" target="_blank">Getting Started with the PostgreSQL Extension for VS Code</a> .</li>
-                    <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">Guide to removing digital distractions</a> I am a big fan of leveraging tech to enhance focus and productivity.</li>
-                    <li><a href="https://github.com/madebygps/llm-spanish-lexicon-eval" target="_blank">llm-spanish-lexicon-eval</a>A evaluation suite for testing Spanish language comprehension and lexical knowledge in LLMs</li>
+                    <li><a href="http://aka.ms/pythonia/grabaciones" target="_blank">Serie introductoria de 6 partes sobre IA con Python</a></li>
+                    <li><a href="https://youtu.be/d_wpn8wW2sw?feature=shared" target="_blank">Getting Started with the PostgreSQL Extension for VS Code</a></li>
+                    <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">Guide to removing digital distractions</a></li>
+                    <li><a href="https://github.com/madebygps/llm-spanish-lexicon-eval" target="_blank">Evaluation suite for testing Spanish language comprehension and lexical knowledge in LLMs</a></li>
                 </ul>
             </div>
             <footer style="text-align:center; margin-top:40px; color:#888; font-size:15px;">
