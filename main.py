@@ -126,11 +126,10 @@ async def home():
                 
                 <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">some of my favorite recent work</h2>
                 <ul>
-                    <li><a href="http://aka.ms/pythonia/grabaciones" target="_blank">Python + IA </a> Serie introductoria de 6 partes sobre IA con Python </li>
-                    <li><a href="https://x.com/madebygps/status/1950352345327345837" target="_blank">Python Learning Space</a> How to configure GitHub Copilot to learn tech concepts deeply through hands-on exercises.</li>
-                    <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">A brutal guide to removing digital distractions</a> I am a big fan of leveraging tech to enhance focus and productivity.</li>
-                    <li><a href="https://github.com/madebygps/azd-simple-fastapi-container-appservice" target="_blank">Containerized FastAPI on App Service</a> Deploy a FastAPI app in a container on Azure App Service quick!</li>
-                    <li><a href="https://youtu.be/gIHt75GVWDo?feature=shared" target="_blank">MPC + Python</a> Crea tu Primer MCP Server con Python [Curso Completo Desde Cero] </li>
+                    <li><a href="http://aka.ms/pythonia/grabaciones" target="_blank">Python + IA</a> Serie introductoria de 6 partes sobre IA con Python </li>
+                    <li><a href="https://youtu.be/d_wpn8wW2sw?feature=shared" target="_blank">Getting Started with the PostgreSQL Extension for VS Code</a> .</li>
+                    <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">Guide to removing digital distractions</a> I am a big fan of leveraging tech to enhance focus and productivity.</li>
+                    <li><a href="https://github.com/madebygps/llm-spanish-lexicon-eval" target="_blank">llm-spanish-lexicon-eval</a>A evaluation suite for testing Spanish language comprehension and lexical knowledge in LLMs</li>
                 </ul>
             </div>
             <footer style="text-align:center; margin-top:40px; color:#888; font-size:15px;">
