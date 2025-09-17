@@ -116,7 +116,8 @@ async def home():
                 <a href="https://github.com/madebygps" target="_blank">github</a>
                 <a href="https://twitter.com/madebygps" target="_blank">x</a>
                 <a href="https://youtube.com/@gpslearnsai" target="_blank">youtube</a>
-                <a rel="me" href="https://hachyderm.io/@gps">Mastodon</a>
+                <a rel="me" href="https://hachyderm.io/@gps">mastodon</a>
+                <a rel="me" href="https://bsky.app/profile/madebygps.com">bsky</a>
             </div>
             <h1>Gwen Peña-Siguenza.</h1>
             <div class="content">
