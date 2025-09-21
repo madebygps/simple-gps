@@ -32,6 +32,7 @@ if os.path.exists("static"):
 async def home():
     html_content = """
     <head>
+        <title>GPS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body {
