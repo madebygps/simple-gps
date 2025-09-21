@@ -10,8 +10,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(
-    title="Gwen Peña-Siguenza",
-    description="Personal website of Gwen Peña-Siguenza",
+    title="Gwyneth Peña-Siguenza",
+    description="Personal website of Gwyneth Peña-Siguenza",
     version="1.0.0"
 )
 
@@ -120,9 +120,9 @@ async def home():
                 <a rel="me" href="https://bsky.app/profile/madebygps.com">bsky</a>
                 <a rel="me" href="http://madebygps.substack.com/">substack</a>
             </div>
-            <h1>Gwen Peña-Siguenza.</h1>
+            <h1>Gwyneth Peña-Siguenza.</h1>
             <div class="content">
-                <p>I like building and teaching. I work at Microsoft as a Cloud Advocate helping customers build and deploy Python workloads on Azure.</p>
+                <p>I work at Microsoft as a Python Advocate, helping customers and the community build and deploy Python workloads on Azure.</p>
                         
                 <p>I maintain <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
                 
