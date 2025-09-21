@@ -61,7 +61,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
 
 // App Service
 resource appService 'Microsoft.Web/sites@2023-12-01' = {
-  name: 'gwen'
+  name: 'madebygps'
   location: location
   identity: {
     type: 'UserAssigned'

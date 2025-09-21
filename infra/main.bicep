@@ -16,7 +16,7 @@ param resourceGroupName string
 param port string = '8000'
 
 var resourceToken = uniqueString(subscription().id, location, environmentName)
-var resourcePrefix = 'gps'
+var resourcePrefix = 'madebygps'
 
 // Resource Group
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2024-03-01' = {
