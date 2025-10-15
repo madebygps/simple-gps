@@ -36,69 +36,110 @@ async def home():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body {
-                background: #f6f7fa;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-                color: #222;
+                background: #fff;
+                font-family: 'Times New Roman', Times, serif;
+                color: #000;
                 margin: 0;
                 padding: 0;
                 font-size: 18px;
             }
+
             .container {
                 max-width: 700px;
                 margin: 40px auto;
-                background: #fff;
-                border-radius: 12px;
-                box-shadow: 0 2px 12px rgba(0,0,0,0.06);
                 padding: 40px 32px;
             }
+
             .nav {
                 text-align: left;
                 margin-bottom: 32px;
+                border-bottom: 2px solid #000;
+                padding-bottom: 16px;
             }
+
             .nav a {
-                color: #2970ff;
+                color: #00f;
                 text-decoration: underline;
                 margin-right: 24px;
                 font-size: 16px;
             }
+
+            .nav a:hover {
+                color: #f0f;
+            }
+
+            .nav a:visited {
+                color: #551a8b;
+            }
+
             .nav a:last-child {
                 margin-right: 0;
             }
+
             h1 {
                 font-size: 2.6em;
-                font-weight: 700;
+                font-weight: bold;
                 margin-bottom: 24px;
-                color: #222;
+                color: #000;
             }
+
             h2 {
-                font-size: 1.2em;
+                font-size: 1.4em;
                 margin-top: 32px;
                 margin-bottom: 16px;
-                color: #2970ff;
-                font-weight: 600;
+                color: #000;
+                font-weight: bold;
             }
+
             p, ul {
-                color: #444;
+                color: #000;
                 font-size: 1em;
-                line-height: 1.7;
+                line-height: 1.6;
             }
+
             ul {
-                padding-left: 20px;
+                padding-left: 40px;
                 margin-bottom: 24px;
             }
+
             li {
-                margin-bottom: 10px;
+                margin-bottom: 8px;
             }
+
             a {
-                color: #2970ff;
+                color: #00f;
+                text-decoration: underline;
             }
+
+            a:hover {
+                color: #f0f;
+            }
+
+            a:visited {
+                color: #551a8b;
+            }
+
+            footer {
+                text-align: center;
+                margin-top: 40px;
+                color: #666;
+                font-size: 14px;
+                border-top: 1px solid #000;
+                padding-top: 20px;
+            }
+
+            footer a {
+                color: #00f;
+            }
+
             @media (max-width: 700px) {
                 .container {
                     max-width: 100%;
                     margin: 0;
                     border-radius: 0;
-                    box-shadow: none;
-                    padding: 24px 8px;
+                    border-left: none;
+                    border-right: none;
+                    padding: 24px 16px;
                 }
                 h1 {
                     font-size: 2em;
@@ -121,22 +162,22 @@ async def home():
             </div>
             <h1>Gwyneth Peña-Siguenza.</h1>
             <div class="content">
-                <p>I work at Microsoft as a Python Advocate, helping customers and community build and deploy Python workloads on Azure.</p>
-                        
-                <p>I maintain <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — the courseware built on the belief that anyone can learn cloud engineering with the right guide and discipline.</p>
-                
-                
-                <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 20px; margin-top: 40px; font-weight: 600;">some of my favorite recent work</h2>
+                <p>Python Advocate at Microsoft. I help developers build production Python systems on Azure, and I share what I learn about AI tooling, infrastructure, and disciplined engineering practice.</p>
+
+                <p>I maintain <a href="https://learntocloud.guide" target="_blank">learntocloud</a> — cloud engineering curriculum for people who believe in systematic learning and consistent execution over hype.</p>
+
+
+                <h2>Recent Work</h2>
                 <ul>
-                    <li><a href="http://aka.ms/pythonia/recursos" target="_blank">Serie introductoria de Python + AI</a></li>
-                    <li><a href="https://youtu.be/d_wpn8wW2sw?feature=shared" target="_blank">Getting Started with the PostgreSQL Extension for VS Code</a></li>
-                    <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">Guide to removing digital distractions</a></li>
-                    <li><a href="https://github.com/madebygps/palabras-perdidas" target="_blank">Evaluation suite for testing Spanish language comprehension in LLMs</a></li>
+                    <li><a href="http://aka.ms/pythonia/recursos" target="_blank">Serie introductoria de Python + AI</a> — 9-session course series covering LLMs, RAG, agents, and MCP in Spanish</li>
+                    <li><a href="https://youtu.be/d_wpn8wW2sw?feature=shared" target="_blank">Getting Started with the PostgreSQL Extension for VS Code</a> — Video guide</li>
+                    <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">A brutal guide to removing digital distractions</a> — No-BS system for protecting focus</li>
+                    <li><a href="https://github.com/madebygps/palabras-perdidas" target="_blank">Palabras Perdidas</a> — Comparative evaluation framework testing Spanish vocabulary understanding across open LLMs</li>
                 </ul>
             </div>
-            <footer style="text-align:center; margin-top:40px; color:#888; font-size:15px;">
+            <footer>
                 built on azure app service —
-                <a href="https://github.com/madebygps/simple-gps" target="_blank" style="color:#2970ff;">github repo</a>
+                <a href="https://github.com/madebygps/simple-gps" target="_blank">github repo</a>
             </footer>
         </div>
     </body>
