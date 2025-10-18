@@ -162,7 +162,7 @@ async def home():
             </div>
             <h1>Gwyneth Peña-Siguenza.</h1>
             <div class="content">
-                <p>Python Advocate at Microsoft. I help developers build production Python systems on Azure, and I share what I learn about AI tooling, infrastructure, and engineering practice.</p>
+                <p>Python Advocate at Microsoft. I help developers build Python systems on Azure and I teach.</p>
 
                 <p>I maintain <a href="https://learntocloud.guide" target="_blank">learntocloud</a> a cloud engineering curriculum for people who believe in systematic learning and consistent execution over hype.</p>
 
