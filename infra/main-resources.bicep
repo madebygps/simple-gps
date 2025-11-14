@@ -76,7 +76,7 @@ resource appService 'Microsoft.Web/sites@2023-12-01' = {
       alwaysOn: true
       ftpsState: 'Disabled'
       minTlsVersion: '1.2'
-      appCommandLine: 'uv run uvicorn main:app --host 0.0.0.0 --port 8000'
+      appCommandLine: 'python3 -m uvicorn main:app --host 0.0.0.0 --port 8000'
       cors: {
         allowedOrigins: ['*']
         supportCredentials: false
