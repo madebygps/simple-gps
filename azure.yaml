@@ -6,3 +6,4 @@ services:
     project: ./
     host: appservice
     language: python
+    module  : web
