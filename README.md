@@ -2,12 +2,6 @@
 
 My personal landing page.
 
-## Stack
-
-- FastAPI
-- Python 3.13+
-- Azure App Service
-
 ## Run locally
 
 ``` bash

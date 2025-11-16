@@ -4,6 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 import os
 import logging
+import uvicorn
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -162,9 +163,9 @@ async def home():
             </div>
             <h1>Gwyneth Peña-Siguenza.</h1>
             <div class="content">
-                <p>Python Advocate at Microsoft. I help developers build Python systems on Azure and I teach.</p>
+                <p>I am a Python Advocate at Microsoft. I spend my work time helping developers build Python systems on Azure and teaching.</p>
 
-                <p>I maintain <a href="https://learntocloud.guide" target="_blank">learntocloud</a> a cloud engineering curriculum for people who believe in systematic learning and consistent execution over hype.</p>
+                <p>In my free time, I maintain <a href="https://learntocloud.guide" target="_blank">learntocloud</a> the courseware built on the belief that anyone can learn foundational cloud engineering skills with the right guide and discipline.</p>
 
 
                 <h2>Recent Work</h2>
@@ -199,13 +200,16 @@ async def root():
     """Redirect to home page"""
     return {"message": "Welcome to Gwyneth's website", "docs": "/docs"}
 
-if __name__ == "__main__":
-    import uvicorn
+
+def main():
     port = int(os.environ.get("PORT", 8000))
     logger.info(f"Starting server on port {port}")
     uvicorn.run(
         app, 
-        host="0.0.0.0", 
+        host="0.0.0.0",
         port=port,
         log_level="info"
     )
+
+if __name__ == "__main__":
+    main()
