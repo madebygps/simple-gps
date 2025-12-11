@@ -173,7 +173,7 @@ async def home():
                     <li><a href="http://aka.ms/pythonia/recursos" target="_blank">Serie introductoria de Python + AI</a> — 9-session course series covering LLMs, RAG, agents, and MCP in Spanish</li>
                     <li><a href="https://youtu.be/d_wpn8wW2sw?feature=shared" target="_blank">Getting Started with the PostgreSQL Extension for VS Code</a> — Video guide</li>
                     <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank">A brutal guide to removing digital distractions</a> — No-BS system for protecting focus</li>
-                    <li><a href="https://github.com/madebygps/palabras-perdidas" target="_blank">Palabras Perdidas</a> — Comparative evaluation framework testing Spanish vocabulary understanding across open LLMs</li>
+                    <li><a href="https://github.com/Azure-Samples/python-mcp-demos" target="_blank">Python MCP Demos</a> — MCP implementations using FastMCP with stdio/HTTP transports, LangChain/Agent Framework integration, and Azure Container Apps deployment</li>
                 </ul>
             </div>
             <footer>
