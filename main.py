@@ -210,17 +210,19 @@ async def home():
             <main class="poster">
                 <section class="intro">
                     <h1>Gwyneth Peña-Siguenza.</h1>
-                    <p>I am a Python Advocate at Microsoft. I spend my work time helping developers build Python systems on Azure and teaching.</p>
-                    <p>In my free time, I maintain <a href="https://learntocloud.guide" target="_blank" rel="noopener noreferrer">learntocloud</a> the courseware built on the belief that anyone can learn foundational cloud engineering skills with the right guide and discipline.</p>
+                    <p>For work, I'm a Developer Advocate at Microsoft focused on helping engineers build with AI. I design education programs, create technical content, and translate complex AI capabilities into accessible resources for developers.</p>
+                    <p>In my free time, I maintain <a href="https://learntocloud.guide" target="_blank" rel="noopener noreferrer">LearnToCloud</a>, an open-source learning platform that has helped thousands of developers break into cloud engineering.</p>
+                    <p>I believe in building developer ecosystems through authentic education, not marketing.</p>
                 </section>
 
                 <section class="work">
-                    <h2>Recent Work</h2>
+                    <h2>AI & Developer Education</h2>
                     <ul>
-                        <li><a href="http://aka.ms/pythonia/recursos" target="_blank" rel="noopener noreferrer">Serie introductoria de Python + AI</a> — 9-session course series covering LLMs, RAG, agents, and MCP in Spanish</li>
-                        <li><a href="https://youtu.be/d_wpn8wW2sw?feature=shared" target="_blank" rel="noopener noreferrer">Getting Started with the PostgreSQL Extension for VS Code</a> — Video guide</li>
-                        <li><a href="https://substack.com/inbox/post/163994416?r=fh7h7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false&triedRedirect=true" target="_blank" rel="noopener noreferrer">A brutal guide to removing digital distractions</a> — No-BS system for protecting focus</li>
-                        <li><a href="https://github.com/Azure-Samples/python-mcp-demos" target="_blank" rel="noopener noreferrer">Python MCP Demos</a> — End-to-end MCP server development with FastMCP, from local debugging to production deployment on Azure Container Apps with OAuth authentication</li>
+                        <li><a href="http://aka.ms/pythonia/recursos" target="_blank" rel="noopener noreferrer">Python + AI Course Series</a> — 9-session curriculum covering LLMs, RAG architectures, AI agents, and the Model Context Protocol (MCP)</li>
+                        <li><a href="https://aka.ms/pythonmcp/recursos" target="_blank" rel="noopener noreferrer">Python + MCP Course Series</a> — Production-focused curriculum covering cloud deployment, authentication, and private networking for MCP servers</li>
+                        <li><a href="https://github.com/Azure-Samples/python-mcp-demos" target="_blank" rel="noopener noreferrer">Building MCP Servers with Python</a> — Complete reference from local development to production: debugging, tracing, authentication, and cloud deployment patterns</li>
+                        <li><a href="https://github.com/madebygps/Ignite-Zava-MCP-Server-and-PostgreSQL-Sample/tree/aspire" target="_blank" rel="noopener noreferrer">Multi-Agent Retail Demo</a> — AI agents coordinating across specialized MCP servers for sales, supplier, and finance workflows</li>
+                        <li><a href="https://youtu.be/d_wpn8wW2sw?feature=shared" target="_blank" rel="noopener noreferrer">PostgreSQL Extension for VS Code Tutorial</a> — AI-assisted database workflows: natural language queries, automatic SQL generation, and agent mode integration</li>
                     </ul>
                 </section>
             </main>
