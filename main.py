@@ -210,9 +210,19 @@ async def home():
             <main class="poster">
                 <section class="intro">
                     <h1>Gwyneth Peña-Siguenza.</h1>
-                    <p>For work, I'm a Developer Advocate at Microsoft focused on helping engineers build with AI. I design education programs, create technical content, and translate complex AI capabilities into accessible resources for developers.</p>
-                    <p>In my free time, I maintain <a href="https://learntocloud.guide" target="_blank" rel="noopener noreferrer">LearnToCloud</a>, an open-source learning platform that has helped thousands of developers break into cloud engineering.</p>
-                    <p>I believe in building developer ecosystems through authentic education, not marketing.</p>
+                    <p>I'm a Python Developer Advocate at Microsoft, 
+                    where I help engineers build with AI on Azure and 
+                    work to make the platform more Pythonic 
+                    through open-source contributions, 
+                    SDK improvements, and service design input.</p>
+
+                    <p>I broke into tech without a degree—through 
+                    focused, intentional study. 
+                    That's why I maintain <a href="https://learntocloud.guide" 
+                    target="_blank" rel="noopener noreferrer">LearnToCloud</a>, 
+                    an open-source platform helping others do the same, 
+                    and why I write and speak about
+                    <a href="https://madebygps.substack.com/p/my-weekly-screen-time-is-41-minutes" target="_blank" rel="noopener noreferrer">deep focus</a>, discipline, and <a href="https://www.youtube.com/watch?v=88hnhRmpPZs" target="_blank" rel="noopener noreferrer">the practice of learning well</a>.</p>
                 </section>
 
                 <section class="work">
