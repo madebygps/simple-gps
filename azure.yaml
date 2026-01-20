@@ -3,7 +3,7 @@ infra:
   provider: bicep
 services:
   simple-gps:
-    project: ./
-    host: appservice
-    language: python
+    project: ./src
+    host: staticwebapp
+    dist: ./src
 

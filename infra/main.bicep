@@ -12,9 +12,6 @@ param location string
 @description('Name of the resource group')
 param resourceGroupName string
 
-@description('Port number for the application')
-param port string = '8000'
-
 var resourceToken = uniqueString(subscription().id, location, environmentName)
 var resourcePrefix = 'madebygps'
 
@@ -36,7 +33,6 @@ module resources 'main-resources.bicep'= {
     environmentName: environmentName
     resourceToken: resourceToken
     resourcePrefix: resourcePrefix
-    port: port
   }
 }
 
