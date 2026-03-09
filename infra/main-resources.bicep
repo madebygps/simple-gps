@@ -28,7 +28,7 @@ resource webApp 'Microsoft.Web/sites@2023-12-01' = {
     serverFarmId: appServicePlan.id
     siteConfig: {
       linuxFxVersion: 'PYTHON|3.12'
-      appCommandLine: 'python -m http.server 8080'
+      appCommandLine: 'python -m http.server 8000 --directory /home/site/wwwroot'
       ftpsState: 'Disabled'
       minTlsVersion: '1.2'
     }
