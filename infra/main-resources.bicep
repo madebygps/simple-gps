@@ -5,7 +5,7 @@ param resourcePrefix string
 
 // App Service Plan (Free tier)
 resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
-  name: 'az-${resourcePrefix}-${resourceToken}-plan'
+  name: '${resourcePrefix}-plan'
   location: location
   sku: {
     name: 'F1'
@@ -22,7 +22,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
 
 // App Service
 resource webApp 'Microsoft.Web/sites@2023-12-01' = {
-  name: 'az-${resourcePrefix}-${resourceToken}-app'
+  name: resourcePrefix
   location: location
   properties: {
     serverFarmId: appServicePlan.id
