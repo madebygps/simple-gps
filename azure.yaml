@@ -6,5 +6,4 @@ services:
     project: ./src
     host: appservice
     language: py
-    dist: ./src
 
