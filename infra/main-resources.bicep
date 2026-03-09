@@ -3,20 +3,36 @@ param environmentName string
 param resourceToken string
 param resourcePrefix string
 
-// Azure Static Web App (Free tier)
-resource staticWebApp 'Microsoft.Web/staticSites@2023-12-01' = {
-  name: 'az-${resourcePrefix}-${resourceToken}-swa'
+// App Service Plan (Free tier)
+resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
+  name: 'az-${resourcePrefix}-${resourceToken}-plan'
   location: location
   sku: {
-    name: 'Free'
+    name: 'F1'
     tier: 'Free'
   }
+  kind: 'linux'
   properties: {
-    stagingEnvironmentPolicy: 'Enabled'
-    allowConfigFileUpdates: true
-    buildProperties: {
-      skipGithubActionWorkflowGeneration: true
+    reserved: true
+  }
+  tags: {
+    'azd-env-name': environmentName
+  }
+}
+
+// App Service
+resource webApp 'Microsoft.Web/sites@2023-12-01' = {
+  name: 'az-${resourcePrefix}-${resourceToken}-app'
+  location: location
+  properties: {
+    serverFarmId: appServicePlan.id
+    siteConfig: {
+      linuxFxVersion: 'PYTHON|3.12'
+      appCommandLine: 'python -m http.server 8080'
+      ftpsState: 'Disabled'
+      minTlsVersion: '1.2'
     }
+    httpsOnly: true
   }
   tags: {
     'azd-env-name': environmentName
@@ -24,5 +40,5 @@ resource staticWebApp 'Microsoft.Web/staticSites@2023-12-01' = {
   }
 }
 
-output WEBAPP_NAME string = staticWebApp.name
-output WEBAPP_URI string = 'https://${staticWebApp.properties.defaultHostname}'
+output WEBAPP_NAME string = webApp.name
+output WEBAPP_URI string = 'https://${webApp.properties.defaultHostname}'

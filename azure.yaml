@@ -4,6 +4,7 @@ infra:
 services:
   simple-gps:
     project: ./src
-    host: staticwebapp
+    host: appservice
+    language: py
     dist: ./src
 
